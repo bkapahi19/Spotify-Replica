@@ -1,0 +1,283 @@
+body{
+font-family: "Montserrat", sans-serif;
+margin:0;
+background-color: #000;
+color:#fff;
+overflow:hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color:#000;
+    width:340px;
+    border-radius: 1rem; 
+    margin-right: 0.5rem;
+    /*1rem=16px*/
+
+}
+.maincontent{
+    flex:1;
+    border-radius: 1rem;
+    background-color:#121212;
+    overflow: auto;
+    padding:0 1.5rem 0 1.5rem;
+}
+.musicplayer{
+    background-color:#121212;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    height:72px;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.navbar{
+    background-color:#121212;
+    border-radius: 1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100px;
+    padding:0.5rem 0.75rem;
+}
+
+.navoption a{
+    font-size:1rem;
+    margin-left:1rem;
+}
+.navoption:hover{
+    opacity:1;
+}
+.navoption i{
+    font-size:1.25rem;
+}
+.navoption{
+    line-height:2.5rem;
+    opacity:0.7;
+}
+#spotify{
+    margin-left: 0%;
+}
+.library{
+    background-color: #121212;
+    border-radius:1rem;
+    height:100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liboption img{
+    height:1.25rem;
+    width:1.25rem;
+}
+.icons{
+    font-size:1.25rem;
+    display:flex;
+}
+.icons i{
+    opacity:0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity:1;
+}
+.box{
+    background-color: #232323;
+    height:8rem;
+    border-radius:0.75rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding:1rem 1.25rem;
+    line-height:2.8rem;
+    overflow: hidden visible;
+}
+.boxp1{
+    font-size: 1rem;
+    font-weight:500;
+}
+.boxp2{
+    font-size: 0.85rem;
+    opacity:0.9;
+}
+.badge{
+    background-color: #fff;
+    border:none;
+    border-radius: 100px;
+    padding:0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height:2rem;
+    width:fit-content;
+}
+.stickynavbar{
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.navicons{
+   margin-left:0.75rem;
+}
+.stickynavop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navitem{
+    margin-right:1rem;
+}
+.black-badge{
+    background-color: #000;
+    color:#fff;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color:#232323;
+    width:150px;
+    border-radius:0.5rem;
+    padding:1rem;
+    margin-left:1.5rem;
+    margin-top: 0.8rem;
+    transition: all 0.1s ease;
+}
+.card-cont{
+    display:inline-flex;
+    flex-wrap:wrap;
+}
+.cardimg{
+    width:100%;
+    border-radius:0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity:0.5;
+}
+.sup{
+  font-size:0.5rem;  
+}
+.footer{
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linebr{
+    width:90%;
+    height:50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.musicplayer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.playcontrol{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.albumplay{
+    width:25%;
+}
+.audioplayer{
+    width:50%;
+}
+.music-icons{
+    width:25%;
+}
+.playicon{
+    height:1rem;
+    margin-right:1.74rem;
+    opacity: 0.7;
+}
+.playicon:hover{
+    opacity: 1;
+}
+.playbackbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prog-Bar{
+    width: 70%;
+    color: #fff;
+    cursor: pointer;
+}
+.prog-Bar::-webkit-slider-runnable-track{
+    border-radius:100px;
+    height:1rem;
+}
+.prog-Bar::-webkit-slider-thumb{
+    /* appearance: none; */
+    height:1rem;
+    width:1rem;
+    background-color: #1bd760;
+    border-radius:50%;
+}
+.albumplay img{
+    height:70px;
+    width:70px;
+}
+.albumplay{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.albumplay i{
+    margin-right:1rem;
+}
+.albchar{
+    font-size:0.6rem;
+    opacity: 0.7;
+    line-height:20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-self:baseline;
+}
+.albtitle{
+    margin-left:0.5rem;
+    margin-right: 1rem;
+}
+.hearts{
+    color: #ccc;
+    transition: color 0.1s ease;
+}
+.hearts:hover{
+    color:red;
+}
+.clappers{
+    opacity: 0.7;
+}
+.clappers:hover{
+    opacity: 1;
+}
+.mus-icon{
+    opacity: 0.7;
+    margin-right: 0.5rem;
+}
+.mus-icon:hover{
+    opacity: 1;
+}
+.card:hover{
+    box-shadow: 0 0 5px gainsboro;
+}
